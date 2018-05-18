@@ -1,0 +1,28 @@
+<div class="sidenav" style="width: 250px; background-color: white">
+  <div style="text-align: center">
+  <h5 style=" color: #47525e">Ultimele 10 comenzi</h5>
+</div>
+    <hr style="color: #47525e; border-top: 3px solid rgba(0,0,0,.1) ">
+  <div class="form-group" style="padding-left: 10px; padding-right: 10px">
+      <button class="btn btn-sm" style="margin-bottom: 5px; height: 40px; width: 220px; background-color: #47525e; color: white">Reincarca ultimele comenzi</button>
+      <input type="text" class="form-control" id="search" style=" width: 220px; height: 40px;" placeholder="search">
+  </div>
+  <hr style="color: #47525e; border-top: 3px solid rgba(0,0,0,.1)">
+    <table  (click)="onClick(this.user)" *ngFor="let user of users" style=" width: 250px">
+      <tbody>
+        <tr>
+          <div class="items" style="margin-left: 20px;">
+      <p>{{user.numar}}</p>
+      <p>{{user.nume}}</p>
+    </div>
+    </tr>
+      <hr style="color: #47525e; border-top: 3px solid rgba(0,0,0,.1)">
+    </tbody>
+    </table>
+
+  </div>
+
+  <div class="main" style="text-align: center">
+    <h2>{{this.numar}}</h2>
+    <h2>{{this.nume}}</h2>
+  </div>

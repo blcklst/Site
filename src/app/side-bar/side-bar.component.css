@@ -51,41 +51,6 @@
         margin: auto;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    color: #eaedf4;
-    -webkit-font-smoothing: antialiased;
-    background: #f0f0f0;
-
-}
-
-#container {
-    position: relative;
-    width: 440px;
-    height: 380px;
-    top: 50%;
-    left: 50%;
-    margin-top: -200px;
-    margin-left: -220px;
-}
-
-
-#container {
-    position: relative;
-    width: 440px;
-    height: 380px;
-    top: 50%;
-    left: 50%;
-    margin-top: -200px;
-    margin-left: -220px;
-    background: #fff;
-    border-radius: 3px;
-    /* border: 1px solid #ccc; */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-}
-
-.full-screen {
-    position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+.items:hover {
+  cursor: pointer;
 }

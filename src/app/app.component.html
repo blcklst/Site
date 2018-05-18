@@ -1,20 +1,80 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- <div class="sidenav">
+  <section class = "sec-hov" (click)="onClick(this.user)" *ngFor="let user of users" style="margin-left: 20px">
+    <p>{{user.numar}}</p>
+    <p>{{user.nume}}</p>
+    <hr style="color: white; ">
+  </section>
 
+</div>
+
+<div class="main" style="text-align: center">
+  <h2>{{this.numar}}</h2>
+  <h2>{{this.nume}}</h2>
+</div>
+      -->
+<!--
+ <div class="text-center" style="margin-top: 100px">
+</div>
+
+ <form class='login text-center'>
+    <div class="form-group col-6 text-center" style="margin-left: 100px">
+        <label for="exampleInputEmail1">Usermail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group col-6 text-center" style="margin-left: 100px;">
+        <label for="exampleInputPassword1">Parola</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button (click)="testService()" style="background-color: #47525e; border-color:#47525e; margin-top:5px" class="btn btn-primary col-12">Sign in</button>
+</form> -->
+
+
+ <!-- <div style="background-color: #eaedf4" class="full-screen">
+
+<div id="container" style="text-align: center; display: flex">
+
+
+  <form style="margin:auto; padding-bottom: 20px">
+    <div style="color: silver; margin-bottom: 30px">
+        <h3 style="color: #47525e">Sign in</h3>
+        <h6 style="margin-top: 20px" >Preluare comenzi abator</h6>
+        <h6>Agricover</h6>
+    </div> -->
+    <div class="form-group">
+      <input style="width: 300px" class="form-control col-12" placeholder="Cautare dupa id" name="idAngajat" [(ngModel)]="idAngajat">
+    </div>
+    <div class="form-group">
+      <input style="width: 300px" class="form-control col-12" placeholder="nume" name="firstName" [(ngModel)]="angajat.firstName">
+    </div>
+    <div class="form-group">
+      <input style="width: 300px" class="form-control col-12" placeholder="prenume" name="lastName" [(ngModel)]="angajat.lastName">
+    </div>
+    <div class="form-group">
+      <input style="width: 300px" class="form-control col-12" placeholder="sex" name="gender" [(ngModel)]="angajat.gender">
+    </div>
+    <div class="form-group">
+      <input style="width: 300px" class="form-control col-12" placeholder="salariu" name="salary" [(ngModel)]="angajat.salary">
+    </div>
+    <!-- <div class="form-group">
+      <input style="margin-top: -5px" type="password" class="form-control col-12" id="userPassword" placeholder="Parola">
+    </div> -->
+    <!-- <div class="form-group"> -->
+<!-- <button (click)="testService()" style="background-color: #47525e; border-color:#47525e; margin-top:5px" class="btn btn-primary col-12">Sign in</button> -->
+<!-- {{angajat}} -->
+<!-- </div> -->
+<!--
+
+
+  </form>
+
+
+ </div> -->
+ <button (click)="addEmployee()" style="background-color: #47525e; border-color:#47525e; margin-top:5px" class="btn btn-primary col-3">adauga</button>
+ <button (click)="testService()" style="background-color: #47525e; border-color:#47525e; margin-top:5px" class="btn btn-primary col-3">cauta dupa id</button>
+ {{nume}}
+<!-- </div> -->
+
+
+<!-- <app-navbar></app-navbar> -->
+<!-- <app-sidebar></app-sidebar>  -->
+<!-- <router-outlet></router-outlet> -->
